@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2, user-scalable=yes"
+		/>
+		<title>Paypal</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body style="min-height: fit-content">
+		<header
+			class="bg-dark-blue z-1 fixed pa2 pt3 navigation w-100 flex flex-row justify-between"
+		>
+			<div class="navigation-l flex flex-row justify-between w-50">
+				<p class="f3 fw4 link dim white b dib mr3 pointer">
+					<i style="letter-spacing: -10px"
+						><span class="white">P</span><span class="light-blue">P</span></i
+					>
+				</p>
+				<a href="./home.html" class="f4 fw4 link dim white b dib mr3 pointer"
+					>Home</a
+				>
+				<a href="./send.html" class="f4 fw4 link dim white b dib mr3 pointer"
+					>Send</a
+				>
+				<a href="./wallet.html" class="f4 fw4 link dim white b dib mr3 pointer"
+					>Wallet</a
+				>
+				<a
+					href="./activity.html"
+					class="f4 fw4 link dim white b dib mr3 pointer"
+					>Activity</a
+				>
+				<a href="#" class="f4 fw4 link dim white b dib mr3 pointer">Help</a>
+			</div>
+			<div class="navigation-l flex flex-row justify-around w-30">
+				<a href="#" class="f4 fw4 link dim white b dib mr3 pointer"
+					><img src="./Icons/bell.svg" alt="bell"
+				/></a>
+				<a href="./settings.html" class="f4 fw4 link dim white b dib mr3 pointer"
+					><img src="./Icons/settings.svg" alt="settings"
+				/></a>
+
+				<a href="./index.html" class="f4 fw4 link dim white b dib mr3 pointer"
+					>Log Out</a
+				>
+			</div>
+
+			<button
+				class="bn bg-transparent pa2 navigation-ms"
+				type="button"
+				data-bs-toggle="offcanvas"
+				data-bs-target="#offcanvasWithBothOptions"
+				aria-controls="offcanvasWithBothOptions"
+			>
+				<img src="./Icons/menu.svg" alt="menu" class="navigation-ms ml2" />
+			</button>
+
+			<div
+				class="offcanvas offcanvas-start"
+				data-bs-scroll="true"
+				tabindex="-1"
+				id="offcanvasWithBothOptions"
+				aria-labelledby="offcanvasWithBothOptionsLabel"
+				style="background-color: #00449e; height: 50%"
+			>
+				<div class="offcanvas-header">
+					<a href="./index.html" class="link white"
+						><h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+							Log Out
+						</h5></a
+					>
+					<a href="#" class="f4 fw4 link dim white b dib mr3 pointer"
+						><img src="./Icons/settings.svg" alt="settings"
+					/></a>
+					<button
+						type="button"
+						class="btn-close bg-white"
+						data-bs-dismiss="offcanvas"
+						aria-label="Close"
+					></button>
+				</div>
+				<div class="offcanvas-body">
+					<div class="flex flex-column">
+						<a
+							href="./home.html"
+							class="f4 fw4 link in-links white b dib mr3 pointer"
+							>Home</a
+						>
+						<a
+							href="./send.html"
+							class="f4 fw4 link in-links white b dib mr3 pointer"
+							>Send</a
+						>
+						<a
+							href="./wallet.html"
+							class="f4 fw4 link in-links white b dib mr3 pointer"
+							>Wallet</a
+						>
+
+						<a
+							href="./activity.html"
+							class="f4 fw4 link in-links white b dib mr3 pointer"
+							>Activity</a
+						>
+						<a href="#" class="f4 fw4 link in-links white b dib mr3 pointer"
+							>Help</a
+						>
+					</div>
+				</div>
+			</div>
+			<h1 class="pa2 tc mb2 navigation-ms" style="letter-spacing: -10px">
+				<i><span class="white">P</span><span class="light-blue">P</span></i>
+			</h1>
+			<img src="./Icons/bell.svg" alt="bl" class="navigation-ms mr2" />
+		</header>
+		<div class="pa4 w-100 mb2"></div>
+		<section class="w-100 pa4 flex flex-column bg-light-gray">
+			<h4 class="w-100">Help Center • Personal Account</h4>
+			<h3 class="w-100 fw-light">Hi User. How can we help?</h3>
+			<div class="w-100 pa3 inline-flex ba">
+				<img src="./Icons/search.svg" alt="" class="mr2" />
+				<input
+					type="text"
+					class="bn bg-transparent pa2 w-90"
+					placeholder="Search questions, keywords, or topics"
+				/>
+			</div>
+		</section>
+		<section class="helpSection flex justify-between">
+			<div class="pa2 pl4-l pl4-m pl3 pt4 flex flex-column helpLinks">
+				<p class="pa2 b helpLink w-100">Home</p>
+				<p class="pa2 b helpLink w-100">Payments and Transfers</p>
+				<p class="pa2 b helpLink w-100">Disputes and Limitations</p>
+				<p class="pa2 b helpLink w-100">My Account</p>
+				<p class="pa2 b helpLink w-100">My Wallet</p>
+				<p class="pa2 b helpLink w-100">Login & Security</p>
+				<p class="pa2 b helpLink w-100">Senior Tools</p>
+			</div>
+			<div class="pa3 flex flex-column infos">
+				<h1 class="fw-light mb2">Common Questions</h1>
+				<p class="blue grow b">How do I issue a refund?</p>
+				<p class="blue grow b">
+					How do I change my password and security questions?
+				</p>
+				<p class="blue grow b">
+					How do I escalate a PayPal dispute to a claim?
+				</p>
+				<p class="blue grow b">
+					Why is the payment I sent pending or unclaimed? Can I cancel it?
+				</p>
+				<p class="blue grow b">How do I remove limitation from my account?</p>
+				<p class="blue grow b">
+					How do I add money to my PayPal account from my bank?
+				</p>
+				<p class="blue grow b">I forgot my password. How do I reset it?</p>
+				<p class="blue grow b">How do I open a dispute with a seller?</p>
+				<p class="blue grow b">How do I get a refund?</p>
+			</div>
+		</section>
+		<section class="w-100 pa3 flex flex-column justify-around" style="min-height: 500px;">
+			<h2 class="fw-light">More ways we can help</h2>
+			<div class="helpOptions-s mb4 flex flex-column">
+				<div class="col mb2 helpOptions">
+					<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+						<img src="./Icons/thumbs-up.svg" alt="" class="w-10" />
+						<div class="w-70 ml2">
+							<h5 class="blue mt3">Resolution Center</h5>
+							<p class="blue">Fix transaction and account related issues</p>
+						</div>
+					</div>
+				</div>
+				<div class="col mb2 helpOptions">
+					<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+						<img src="./Icons/users.svg" alt="" class="w-10" />
+						<div class="w-70 ml2">
+							<h5 class="blue mt3">Community Forum</h5>
+							<p class="blue">Join the discussion with PayPal customers</p>
+						</div>
+					</div>
+				</div>
+				<div class="col mb2 helpOptions">
+					<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+						<img src="./Icons/tax.svg" alt="" class="w-10" />
+						<div class="w-70 ml2">
+							<h5 class="blue mt3">Tax center</h5>
+							<p class="blue">Get your 1099-K and other tax info here</p>
+						</div>
+					</div>
+				</div>
+				<div class="col mb2 helpOptions">
+					<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+						<img src="./Icons/technical.svg" alt="" class="w-10" />
+						<div class="w-70 ml2">
+							<h5 class="blue mt3">Technical Help</h5>
+							<p class="blue">Find out how PayPal works for your business</p>
+						</div>
+					</div>
+				</div>
+				<div class="col mb2 helpOptions">
+					<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+						<img src="./Icons/contact.svg" alt="" class="w-10" />
+						<div class="w-70 ml2">
+							<h5 class="blue mt3">Contact Us</h5>
+							<p class="blue">Contact customer service</p>
+						</div>
+					</div>
+				</div>
+				<div class="col mb2 helpOptions">
+					<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+						<img src="./Icons/message.svg" alt="" class="w-10" />
+						<div class="w-70 ml2">
+							<h5 class="blue mt3">Message Center</h5>
+							<p class="blue">Send, receive and view your PayPal messages</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container text-center">
+				<div class="row row-cols-2 helpOptions-m">
+					<div class="col mb2 helpOptions">
+						<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+							<img src="./Icons/thumbs-up.svg" alt="" class="w-10" />
+							<div class="w-90 f7 ml2">
+								<h5 class="blue mt3">Resolution Center</h5>
+								<p class="blue">Fix transaction and account related issues</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb2 helpOptions">
+						<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+							<img src="./Icons/users.svg" alt="" class="w-10" />
+							<div class="w-90 f7 ml2">
+								<h5 class="blue mt3">Community Forum</h5>
+								<p class="blue">Join the discussion with PayPal customers</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb2 helpOptions">
+						<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+							<img src="./Icons/tax.svg" alt="" class="w-10" />
+							<div class="w-90 f7 ml2">
+								<h5 class="blue mt3">Tax center</h5>
+								<p class="blue">Get your 1099-K and other tax info here</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb2 helpOptions">
+						<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+							<img src="./Icons/technical.svg" alt="" class="w-10" />
+							<div class="w-90 f7 ml2">
+								<h5 class="blue mt3">Technical Help</h5>
+								<p class="blue">Find out how PayPal works for your business</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb2 helpOptions">
+						<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+							<img src="./Icons/contact.svg" alt="" class="w-10" />
+							<div class="w-90 f7 ml2">
+								<h5 class="blue mt3">Contact Us</h5>
+								<p class="blue">Contact customer service</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb2 helpOptions">
+						<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+							<img src="./Icons/message.svg" alt="" class="w-10" />
+							<div class="w-90 f7 ml2">
+								<h5 class="blue mt3">Message Center</h5>
+								<p class="blue">Send, receive and view your PayPal messages</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-cols-3 helpOptions-l">
+					<div class="col mb2 helpOptions">
+						<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+							<img src="./Icons/thumbs-up.svg" alt="" class="w-10" />
+							<div class="w-90 f7 ml2">
+								<h5 class="blue mt3">Resolution Center</h5>
+								<p class="blue">Fix transaction and account related issues</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb2 helpOptions">
+						<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+							<img src="./Icons/users.svg" alt="" class="w-10" />
+							<div class="w-90 f7 ml2">
+								<h5 class="blue mt3">Community Forum</h5>
+								<p class="blue">Join the discussion with PayPal customers</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb2 helpOptions">
+						<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+							<img src="./Icons/tax.svg" alt="" class="w-10" />
+							<div class="w-90 f7 ml2">
+								<h5 class="blue mt3">Tax center</h5>
+								<p class="blue">Get your 1099-K and other tax info here</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb2 helpOptions">
+						<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+							<img src="./Icons/technical.svg" alt="" class="w-10" />
+							<div class="w-90 f7 ml2">
+								<h5 class="blue mt3">Technical Help</h5>
+								<p class="blue">Find out how PayPal works for your business</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb2 helpOptions">
+						<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+							<img src="./Icons/contact.svg" alt="" class="w-10" />
+							<div class="w-90 f7 ml2">
+								<h5 class="blue mt3">Contact Us</h5>
+								<p class="blue">Contact customer service</p>
+							</div>
+						</div>
+					</div>
+					<div class="col mb2 helpOptions">
+						<div class="pa1 tl pl3 w-100 ba b--light-gray br4 inline-flex">
+							<img src="./Icons/message.svg" alt="" class="w-10" />
+							<div class="w-90 f7 ml2">
+								<h5 class="blue mt3">Message Center</h5>
+								<p class="blue">Send, receive and view your PayPal messages</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="w-100 helpOptions mb4 flex justify-between">
+				<div class="pa1 ba b--light-gray br4 inline-flex">
+					<img src="./Icons/tax.svg" alt="" class="w-10">
+					<div class="w-70 ml2">
+						<h5 class="blue mt3">Tax center</h5>
+						<p class="blue">Learn about tax center</p>
+					</div>
+				</div>
+			</div> -->
+			<div class="w-100 pa3 br4 mb3 tc bg-light-gray">
+				<p class="w-100 tc f3">
+					How are we doing?
+					<span class="f6 blue b">Take our survey</span>
+				</p>
+			</div>
+		</section>
+		<footer class="shadow-lg w-100 pa2 flex flex-column">
+			<div class="justify-between actualFooter ml3-m">
+				<h2 class="pa2 fw-bolder mb2">
+					<i style="letter-spacing: -10px"
+						><span class="dark-blue">P</span
+						><span class="light-blue">P</span></i
+					>
+					&nbsp;
+					<i
+						><span class="dark-blue">Pay</span
+						><span class="light-blue">Pal</span></i
+					>
+				</h2>
+				<a href="#" class="link black dib mr3 pointer pt2"><h4>Help</h4></a>
+				<a href="#" class="link black dib mr3 pointer pt2"
+					><h4>Contact Us</h4></a
+				>
+				<a href="#" class="link black dib mr3 pointer pt2"><h4>Security</h4></a>
+			</div>
+			<hr class="w-100" />
+			<div class="justify-between actualFooter">
+				<p>c 1999-2023 All rights reserved.</p>
+
+				<p>Privacy</p>
+				<p>Cookies</p>
+				<p>Legal</p>
+			</div>
+			<p class="moon-gray w-100 license">
+				PayPal Pte. Ltd. is licensed by the Monetary Authority of Singapore as a
+				Major Payment Institution under the Payment Services Act 2019.
+			</p>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
